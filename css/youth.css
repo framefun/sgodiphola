@@ -51,7 +51,7 @@ nav{
     width: 40%;
   }
 }*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .nav-links{
     position: fixed;
     right: 0;
