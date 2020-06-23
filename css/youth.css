@@ -43,17 +43,17 @@ nav{
   background-color: rgb(241, 241, 241);
   border-radius: 2px;
   transition: all 0.3s ease;
-}
+}/*
 @media only screen and (max-width: 1024px) {
   .nav-links{
     display: flex;
     justify-content: space-around;
     width: 40%;
   }
-}
+}*/
 @media only screen and (max-width: 1025px) {
   .nav-links{
-    position: absolute;
+    position: fixed;
     right: 0;
     height: 92vh;
     top: 8vh;
