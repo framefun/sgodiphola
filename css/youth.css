@@ -158,7 +158,87 @@ Start of first section*/
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
-/**/
+/*end first section
+start second section*/
+.second-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  background: #fbfbfb;
+}
+.left-section{
+  position: relative;
+  top: -20vh;
+  z-index: 4;
+}
+.left-image{
+  width: 100%;
+}
+.left-section a{
+  background-color: rgb(28,99,124);
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  margin-top: 8vh;
+  display: block;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 18px 57px -11px rgba(0,0,0,0.81);
+  -moz-box-shadow: 0px 18px 57px -11px rgba(0,0,0,0.81);
+  box-shadow: 0px 18px 57px -11px rgba(0,0,0,0.81);
+}
+.right-section{
+  padding: 5vh;
+}
+.btnTxt{
+  display: inline-block;
+  color: #E3E9ED;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  float: left;
+}
+#white-arrow{
+  width: 30px;
+display: inline-block;
+vertical-align: middle;
+}
+.bigText{
+  color: rgba(28,99,124, 0.05);
+  font-weight: bold;
+  font-size: 25vh;
+  display: block;
+  margin-top: -13vh;
+}
+.medText{
+  display: block;
+  margin-top: -18vh;
+  font-size: 4.5vh;
+  font-weight: bold;
+}
+.smallText{
+  font-size: 2.5vh;
+  text-align: left;
+  padding: 0 10vh 0 5vh;
+  display: block;
+  margin-top: 4.5vh;
+}
+.dot1, .dot2, .dot3{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 20px;
+}
+.dot1{
+  background-color: rgb(224, 30, 30);
+}
+.dot2{
+  background-color: rgb(30, 28, 50);
+}
+.dot3{
+  background-color: rgb(245, 177, 27);
+}
 /*
 screen sizes
 @media only screen and (max-width: 1024px) {
@@ -216,6 +296,17 @@ screen sizes
   .btnGo{
     top: 80%;
   }
+  /*End of first-section
+  start of second-section
+  */
+
+  .btnAbout{
+    margin-right: 20px;
+  }
+  .second-section{
+    display: inline-block;
+  }
+
 }
 
 .nav-active{
