@@ -5,7 +5,9 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
 }
+/*The nav*/
 nav{
   display: flex;
   justify-content: space-around;
@@ -13,7 +15,7 @@ nav{
   min-height: 8vh;
   background-color: rgb(80, 106, 252);/*
   font-family: 'Encode Sans Condensed', sans-serif;*/
-  font-family: 'Heebo', sans-serif;
+
 }
 .logo{
   color: rgb(241, 241, 241);
@@ -43,7 +45,122 @@ nav{
   background-color: rgb(241, 241, 241);
   border-radius: 2px;
   transition: all 0.3s ease;
-}/*
+}
+/*End of nav
+
+Start of first section*/
+.first-section {
+  background: #ff3c00;
+  color: #FFF;
+  text-align: center;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+.first-section img{
+  width: 100%;
+}
+.first-section h1 {
+  font-size: 6rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.first-section p {
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.first-section svg {
+  position: absolute;
+  width: 100%;
+  display: block;
+  bottom: 0;
+  z-index: 3;
+}
+.welcome{
+  background: rgba(0, 87, 120, 0.5);
+  position: absolute;
+  z-index: 2;
+  height: 800px;
+  width: 100%;
+  top: 0;
+}
+.welcome-message{
+  width: 50%;
+  padding: 200px 30px;
+  background: rgba(0, 87, 120, 0.7);
+  height: 100%;
+  text-align: left;
+  position: relative;
+}
+.big-message{
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.small-message{
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  color: rgb(231, 231, 231);
+}
+.btnGo{
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  margin-left: -75px;
+  top: 60%;
+  width: 150px;
+}
+.btn{
+  background: white;
+  width: 100%;
+  display: inline-block;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(0, 87, 120);
+  padding: 10px;
+  -webkit-box-shadow: 0px 18px 57px -30px rgba(0,0,0,0.71);
+  -moz-box-shadow: 0px 18px 57px -30px rgba(0,0,0,0.71);
+  box-shadow: 0px 18px 57px -30px rgba(0,0,0,0.71);
+}
+.arrow{
+  width: 100%;
+  text-align: center;
+  margin: 20px 75px;
+
+}
+.arrow span{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  border-right: 1px solid rgb(230, 230, 230);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+
+}
+.arrow span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0%{
+    opacity:0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+/**/
+/*
+screen sizes
 @media only screen and (max-width: 1024px) {
   .nav-links{
     display: flex;
@@ -51,7 +168,7 @@ nav{
     width: 40%;
   }
 }*/
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1025px) {
   .nav-links{
     position: fixed;
     right: 0;
@@ -73,6 +190,24 @@ nav{
     display: relative;
     margin-right: -100px;
     cursor: pointer;
+  }
+
+  .first-section img{
+    height: 100%;
+    width: auto;
+  }
+  /*End of nav
+  start of...
+  */
+  .welcome-message{
+    width: 100%;
+    padding: 50px 10px;
+    height: 50%;
+    position: relative;
+    top: 50%;
+  }
+  .btnGo{
+    top: 75%;
   }
 }
 
