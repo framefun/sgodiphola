@@ -191,7 +191,6 @@ screen sizes
     margin-right: -100px;
     cursor: pointer;
   }
-
   /*End of nav
   start of first-section
   */
@@ -213,6 +212,7 @@ screen sizes
     position: relative;
     top: 50%;
   }
+
   .btnGo{
     top: 80%;
   }
