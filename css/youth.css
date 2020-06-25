@@ -192,9 +192,6 @@ screen sizes
     cursor: pointer;
   }
 
-<<<<<<< Updated upstream
-=======
-
   /*End of nav
   start of first-section
   */
@@ -202,20 +199,13 @@ screen sizes
   .first-section {
     height: 1000px;
   }
->>>>>>> Stashed changes
   .first-section img{
     height: 100%;
     width: auto;
   }
-<<<<<<< Updated upstream
-  /*End of nav
-  start of...
-  */
-=======
   .welcome{
     height: 1000px;
   }
->>>>>>> Stashed changes
   .welcome-message{
     width: 100%;
     padding: 50px 10px;
@@ -223,14 +213,8 @@ screen sizes
     position: relative;
     top: 50%;
   }
-<<<<<<< Updated upstream
-  .btnGo{
-    top: 75%;
-=======
-
   .btnGo{
     top: 80%;
->>>>>>> Stashed changes
   }
 }
 
