@@ -317,7 +317,9 @@ screen sizes
   }
   .left-image{
   }
-
+  .smallText{
+    padding: 0 2vh;
+  }
 }
 
 .nav-active{
