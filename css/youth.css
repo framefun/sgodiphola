@@ -165,6 +165,7 @@ start second section*/
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   background: #fbfbfb;
+
 }
 .left-section{
   position: relative;
@@ -305,6 +306,16 @@ screen sizes
   }
   .second-section{
     display: inline-block;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .left-section{
+    margin-top: 15vh;
+    position: relative;
+    z-index: 5;
+    overflow-y: visible;
+  }
+  .left-image{
   }
 
 }
