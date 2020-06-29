@@ -275,6 +275,7 @@ vertical-align: middle;
   top: 0;
   padding: 10vh;
   text-align: center;
+  width: 100%;
 }
 .top-news{
   margin: auto;
@@ -780,25 +781,25 @@ Start screen sizes
     display: block;
   }
   .big-card{
-    width: 700px;
-    height: 363.125px;
+    width: 600px;
+    height: 311.25px;
   }
   .small-card{
     margin-top: 100px;
     max-width: none;
-    width: 700px;
-    height: 363.125px;
+      width: 600px;
+      height: 311.25px;
   }
   .medium-title, .small-title{
-    margin: 300px 20px 0 20px;
+    margin: 240px 20px 0 20px;
     font-size: 35px;
   }
 
   .tiny-card{
     max-width: none;
     margin: 50px auto;
-    width: 700px;
-    height: 184.211px;
+    width: 600px;
+    height: 126.57px;
   }
   footer{
     display: block;
@@ -820,6 +821,10 @@ Start screen sizes
   #white-label, #blue-label{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     max-width: 600px;
+  }
+  .third-section{
+    overflow-x: hidden;
+    width: 100%;
   }
 }
 /*End of 1024*/
