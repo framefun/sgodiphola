@@ -827,8 +827,38 @@ Start screen sizes
     width: 100%;
   }
 }
-/*End of 1024*/
-
+/*End of 1024
+start of 768*/
+@media only screen and (max-width: 768px) {
+  .bold-label, .regular-label{
+    font-size: 30px;
+  }
+  .big-card{
+    width: 300px;
+    height: 155.625px;
+  }
+  .small-card{
+    margin-top: 50px;
+    max-width: none;
+      width: 300px;
+      height: 155.625px;
+  }
+  .medium-title, .small-title{
+    margin: 100px 20px 0 20px;
+    font-size: 20px;
+  }
+  .tiny-card{
+    max-width: none;
+    margin: 30px auto;
+    width: 300px;
+    height: 63.285px;
+  }
+  .third-holder{
+    padding: 2%;
+  }
+}
+/*End of 768
+start of 1392*/
 @media only screen and (max-width: 1392px) {
 #blue-label, #white-label, .top-news, .new-stories, .share, footer{
     max-width: 820px;
