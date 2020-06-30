@@ -7,67 +7,160 @@ body{
   box-sizing: border-box;
   font-family: 'Heebo', sans-serif;
 }
-/*The nav*/
-nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  background-color: rgb(80, 106, 252);/*
-  font-family: 'Encode Sans Condensed', sans-serif;*/
+/*The nav
+}*/nav{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 20vh;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+  .logo{
+    width: 20%;
+    text-align: left;
+    margin: auto 10%;
+  }
+  .nav-buttons{
+    width: 40%;
+    text-align: center;
+    margin: auto 10%;
+  }
+  .nav-buttons a{
+    color: #dedede;
+    margin: auto 6%;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  .nav-buttons a:hover{
+    color: white;
 
-}
-.logo{
-  color: rgb(241, 241, 241);
-}
-.nav-links{
-  display: flex;
-  justify-content: space-around;
-  width: 25%;
-}
-.nav-links li{
-  list-style: none;
-}
-.nav-links a{
-  color: rgb(241, 241, 241);
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: capitalize;
-}
-.burger{
-  display: none;
-}
-.burger div{
-  width: 40px;
-  height: 3px;
-  margin: 10px;
-  background-color: rgb(241, 241, 241);
-  border-radius: 2px;
-  transition: all 0.3s ease;
+  }
+  #menu{
+    display: none;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    -webkit-box-shadow: 0px 18px 57px -11px rgba(0,0,0,0.81);
+    -moz-box-shadow: 0px 18px 57px -11px rgba(0,0,0,0.81);
+    box-shadow: 0px 18px 57px -11px rgba(0,0,0,0.81);
+    background: rgba(14,44,68, 0.6);
+    transition: width 2s;
+
+    /*clicking the burger btn*/
+  }
+  .burgerMenu{
+    border-radius: 50%;
+    animation-fill-mode: forwards;
+    animation-duration: 0.8s;
+    animation-name: unfill;
+  }
+  .menu{
+    border-radius: 0%;
+    animation-fill-mode: forwards;
+    animation-duration: 0.8s;
+    animation-name: fill;
+    /*
+    */
+    width: 80px;
+    height: 80px;
+  }
+
+  @keyframes unfill {
+  from{
+    width: 400px;
+    height: 100%;
+    border-radius: none;
+    padding: 5%;
+  }
+  to{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
 }
 
-.nav-active{
-  transform: translateX(0%);
+  @keyframes fill {
+  from{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    right: 5%;
+    top: 5%;
+  }
+  to{
+    width: 400px;
+    height: 100%;
+    border-radius: none;
+    padding: 5%;
+    right: 0;
+    top: 0;
+  }
 }
-@keyframes navLinkFade {
+
+  #burger{
+    padding: 10px;
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    text-align: center;
+  }
+  #burger div{
+    width: 80%;
+    height: 5px;
+    margin:10px auto;
+    background-color: rgb(241, 241, 241);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  .toggle .line1{
+    transform: rotate(-45deg) translate(-10px,10px);
+  }
+  .toggle .line2{
+    opacity: 0;
+  }
+  .toggle .line3{
+    transform: rotate(45deg) translate(-10px,-10px);
+  }
+  .stacked-buttons{
+    margin-top: 50%;
+    min-width: 300px;
+  }
+  .stacked-buttons a{
+    display: block;
+    text-align: center;
+    margin: 10% auto;
+    font-size: 50px;
+    color: #dedede;
+    text-transform: capitalize;
+  }
+  .stacked-buttons a:hover{
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+  .stacked-nav-wrapper{
+    /*clicking the burger btn*/
+    display: none;
+  }
+  .open-menu{
+    opacity: 0;
+    animation: openMenu;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    display: block;
+  }
+
+  @keyframes openMenu {
   from{
     opacity: 0;
-    transform: translate(50px);
   }
   to{
     opacity: 1;
-    transform: translate(0px);
   }
-}
-.toggle .line1{
-  transform: rotate(-45deg) translate(-10px,8px);
-}
-.toggle .line2{
-  opacity: 0;
-}
-.toggle .line3{
-  transform: rotate(45deg) translate(-10px,-8px);
 }
 
 /*End of nav
@@ -704,29 +797,19 @@ Start screen sizes
   }
 }*/
 @media only screen and (max-width: 1025px) {
-  .nav-links{
-    position: fixed;
-    right: 0;
-    height: 92vh;
-    top: 8vh;
-    background-color: rgb(80, 106, 252);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+  .logo, .nav-buttons{
+    display: none;
   }
-  .nav-links li{
-    opacity: 0;
-  }
+  #menu{
+    display: block;
+  }/*
   .burger{
     display: block;
     display: relative;
     margin-right: -100px;
     cursor: pointer;
   }
-  /*End of nav
+  End of nav
   start of first-section
   */
 
