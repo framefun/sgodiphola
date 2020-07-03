@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@300&family=Heebo&display=swap" rel="stylesheet">
+    <title>Upcoming young talent in music</title>
+    <link href="css/youth.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        Yiaz logo
+      </div>
+      <div class="nav-buttons">
+        <a href="#">shop</a>
+        <a href="stories.html">stories</a>
+        <a href="about.html">about</a>
+        <a href="#">profile</a>
+      </div>
+      <div id="menu" class="burgerMenu"  align="right">
+        <div id="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <div class="stacked-nav-wrapper" id="nav_wrapper">
+          <div class="stacked-buttons">
+            <a href="#">shop</a>
+            <a href="stories.html">stories</a>
+            <a href="#">about</a>
+            <a href="#">profile</a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <section class="article-section1" style="">
+      <div class="welcome-story">
+        <div class="stories-welcome">
+          <span class="big-message">Upcoming young talent in music</span> <br>
+          <span class="small-message"> <i>Jon Doe - 20 Feb 2020</i></span>
+          <div class="btnGo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="article-section2">
+      <div class="article">
+        <h1>Sub-topic 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+           Excepteur sint occaecat cupidatat non proident,
+           sunt in culpa qui officia deserunt mollit anim id est laborum.
+           <br> <br>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p> <br>
+         <h1>Sub-topic 2</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="like-share-holder" align='left'>
+        <div class="like-status">
+          <span>You liked this</span>
+        </div>
+        <div class="like-share-buttons" align="left">
+          <div class="like">
+            <div class="counter">
+              239k
+            </div>
+            <img src="img/redheart.svg" alt="">
+          </div>
+          <div class="btn_wrap">
+            <span class="btn-descriptor">Share</span>
+            <div class="container">
+              <a class="social-media" target="_blank"  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fclinsm.github.io%2Fyiaz%2F&amp;src=sdkpreparse">
+                <img src="img/facebook.svg" alt="fb">
+              </a>
+              <a class="social-media" target="_blank"  href="https://www.instagram.com">
+                <img src="img/instagram.svg" alt="insta">
+              </a>
+              <a class="social-media" target="_blank" href="https://twitter.com/share?ref_src=twsrc%5Etfw">
+                <img src="img/twitter.svg" alt="tweet">
+              </a>
+              <a class="social-media" target="_blank"  href="https://www.tumblr.com">
+                <img src="img/tumblr.svg" alt="tumblr">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style media="screen">
+
+      </style>
+      <div class="related-articles">
+        <span><h1>Related</h1></span>
+        <div class="top-news">
+          <div class="small-card" id="card2">
+            <div class="card-overlay" align="left">
+              <span class="small-title">Work for your goal </span>
+            </div>
+            <img class="card-image" src="img/shoes.jpg" alt="">
+          </div>
+          <div class="small-card" id="card3">
+            <div class="card-overlay" align="left">
+              <span class="small-title">Involve youth in politics</span>
+            </div>
+            <img class="card-image" src="img/barry.jpg" alt="">
+          </div>
+
+        </div>
+      </div>
+      <div class="comments">
+        <!--new comment section-->
+        <div id="comments">
+          <form class="commentArea" action = "comment?comment=<?php //echo $id; ?>" method = "post">
+            <textarea name="comment"  placeholder = "add a comment" required></textarea>
+            <button type="submit" name="btnComment">post</button>
+          </form>
+          <br> <br>
+
+
+          <?php
+          /* $query = "SELECT * FROM comments WHERE postid = '$id'";
+          $results = mysqli_query($conn, $query);
+
+
+          if (mysqli_num_rows($results) > 0) {*/
+            ?>
+            <span>Recent comments</span> <br>
+            <?php
+            // output data of each row
+        /*    while($get = mysqli_fetch_assoc($results)) {
+              //get name from users mysql_list_tables
+              $uid = $get['userid'];
+              $query2 = "SELECT name FROM users WHERE userid = '$uid'";
+              $answer = mysqli_query($conn, $query2);
+              */
+              ?>
+          <div class="commentDetails">
+            <div class="comment">
+              <?php // echo $get['comment']; ?>something
+            </div>
+            <div class="aboutComment">
+
+              <span><?php
+            /*  if (mysqli_num_rows($answer) > 0) {
+                while($take = mysqli_fetch_assoc($answer)) {
+               echo ucfirst($take['name']);
+             }
+           }else {
+             echo "anonimous";
+           }*/
+               ?></span>
+              <span><?php // echo $get['commentday']; ?></span>
+            </div>
+          </div> <br> <br>
+          <?php
+          /*   }
+           } else {
+             echo "no one has commented yet";
+           }*/
+              ?>
+        </div>
+       <style media="screen">
+       </style>
+        <!--End comment-->
+      </div>
+    </section>
+    <footer>
+      <div class="" id="large">
+        <span class="footer-descriptor">&copy; Yiaz logo</span>
+      </div>
+
+      <div class="" id="nothing">
+        <span></span>
+      </div>
+      <div class="footer-card">
+        <a href="#" class="footer-descriptor">Home</a>
+      </div>
+      <div class="footer-card">
+        <a href="#" class="footer-descriptor">Shop</a>
+      </div>
+      <div class="footer-card">
+        <a href="#" class="footer-descriptor">About</a>
+      </div>
+      <div class="footer-card">
+        <a href="stories.html" class="footer-descriptor">Stories</a>
+      </div>
+    </footer>
+    <style media="screen">
+      .article-section1{
+        color: #FFF;
+      text-align: center;
+      height: 600px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      background-image: url('img/rasta.jpg');
+      background-size: cover;
+      position: relative;
+      }
+      .welcome-story{
+        position: absolute;
+        z-index: 2;
+        height: 600px;
+        width: 100%;
+        top: 0;
+      }
+      .stories-welcome{
+        width: 100%;
+        padding: 450px 20%;
+        height: 100%;
+        text-align: left;
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      footer{
+        position: relative;
+        width: 100%;
+        bottom: 0;
+      }
+      .article-section2{
+        padding: 5% 35% 2% 10%;
+      }
+      .article{
+        max-width: 1000px;
+        font-size: 20px;
+        text-align: justify;
+        justify-content: center;
+        line-height: 35px;
+      }
+      .like-share-holder{
+        margin: 50px 0;
+      }
+      .like-share-buttons{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+      }
+      .like{
+        width: 50px;
+        position: relative;
+      }
+      .like img{
+        width: 50px;
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+      .like img:hover{
+        width: 50px;
+        transform: scale(1.1);
+      }
+      .counter{
+        position: absolute;
+        margin: 0;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        top: 40%;
+        color: white;
+        font-size: 12px;
+      }
+      .btn_wrap{
+      }
+      .story{
+      }
+
+    </style>
+
+
+
+  </body>
+</html>
