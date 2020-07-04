@@ -792,7 +792,75 @@ start screens*/
 
   /*End of stories page
   start article*/
-
+  .article-section1{
+    color: #FFF;
+  text-align: center;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url('img/rasta.jpg');
+  background-size: cover;
+  position: relative;
+  }
+  .welcome-article{
+    position: absolute;
+    z-index: 2;
+    height: 600px;
+    width: 100%;
+    top: 0;
+  }
+  .article-welcome{
+    width: 100%;
+    padding: 450px 20%;
+    height: 100%;
+    text-align: left;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .article-section2{
+    padding: 5% 35% 2% 10%;
+  }
+  .article{
+    max-width: 1000px;
+    font-size: 20px;
+    text-align: justify;
+    justify-content: center;
+    line-height: 35px;
+  }
+  .like-share-holder{
+    margin: 50px 0;
+  }
+  .like-share-buttons{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  }
+  .like{
+    width: 50px;
+    position: relative;
+  }
+  .like img{
+    width: 50px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .like img:hover{
+    width: 50px;
+    transform: scale(1.1);
+  }
+  .counter{
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 40%;
+    color: white;
+    font-size: 12px;
+  }
+  .comments{
+    margin-top: 50px;
+  }
        .aboutComment{
          padding-top: 10px;
          display: flex;
@@ -968,6 +1036,21 @@ Start screen sizes
     overflow-x: hidden;
     width: 100%;
   }
+  /*End of Home
+  start of article*/
+
+  .article-section2{
+    padding: 5%;
+  }
+  .article{
+    max-width: 100%;
+    width: 100%;
+    font-size: 5vh;
+    text-align: justify;
+    justify-content: center;
+    line-height: 8vh;
+  }
+
 }
 /*End of 1024
 start of 768*/
