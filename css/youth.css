@@ -1096,11 +1096,17 @@ Start screen sizes
   }
   /*End of Home
   start of article*/
-
+  .big-article{
+    font-size: 30px;
+  }
+  .small-article{
+    font-size: 15px;
+  }
   .article-section2{
     padding: 5%;
   }
   .article{
+    margin-top: 40px;
     max-width: 100%;
     width: 100%;
     font-size: 20px;
