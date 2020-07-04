@@ -851,16 +851,16 @@ start screens*/
   /*End of stories page
   start article*/
   .article-section1{
-    color: #FFF;
-  text-align: center;
-  height: 600px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  background-image: url('img/rasta.jpg');
-  background-size: cover;
-  position: relative;
-  }
+      color: #FFF;
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url('img/rasta.jpg');
+    background-size: cover;
+    position: relative;
+    }
   .welcome-article{
     position: absolute;
     z-index: 2;
@@ -1103,10 +1103,10 @@ Start screen sizes
   .article{
     max-width: 100%;
     width: 100%;
-    font-size: 5vh;
+    font-size: 20px;
     text-align: justify;
     justify-content: center;
-    line-height: 8vh;
+    line-height: 20px;
   }
 
 }
