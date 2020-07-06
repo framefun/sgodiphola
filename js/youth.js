@@ -25,3 +25,23 @@ if (window.innerWidth > 1024) {
   },false);
 }
 //the end of menu
+//start google charts
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['member',      2],
+    ['Admin',  1],
+    ['Blogger', 1],
+    ['regular user', 1]
+  ]);
+
+  var options = {
+    title: 'User accounts',
+    pieHole: 0.6,
+  };
+
+  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+  chart.draw(data, options);
+}
