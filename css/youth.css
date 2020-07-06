@@ -1243,15 +1243,12 @@ start Profile page*/
     top: 5%;
     width: auto;
     height: auto;
-
-
     cursor: pointer;
     font-size: 13px;
   }
   .profile-status{
-  transition: all .5s ease;
+    transition: all .5s ease;
     clip-path: circle(10px at 85% 10px);
-
     padding: 1.2em;
     border-radius: 10px;
   }
@@ -1349,7 +1346,7 @@ start Profile page*/
   .user-breakdown{
     grid-column: span 0 / 3;
     min-width: 650px;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   #donutchart{
     border-radius: 10px;
